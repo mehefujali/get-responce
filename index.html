@@ -28,7 +28,7 @@
                         target="_self">
                         <input required type="text" name="entry.400557647" placeholder="Enter your name"
                               class="input placeholder:text-white border-purple-500 md:col-span-6 shadow-purple-500 drop-shadow-sm bg-transparent shadow-inner  ">
-                        <input required type="email" name="entry.951580128" placeholder="Enter Your Email"
+                        <input id="email" required type="email" name="entry.951580128" placeholder="Enter Your Email"
                               class="input placeholder:text-white border-purple-500 md:col-span-6 bg-transparent shadow-inner shadow-purple-500 ">
                         <input required type="text" name="entry.475697746" placeholder="Current Module"
                               class="input placeholder:text-white border-purple-500 md:col-span-6 bg-transparent shadow-inner shadow-purple-500 ">
@@ -36,11 +36,13 @@
                               class="input placeholder:text-white border-purple-500 md:col-span-6 bg-transparent shadow-inner shadow-purple-500 ">
                         <textarea required name="entry.167376205" placeholder="Any problem ?"
                               class="textarea placeholder:text-white border-purple-500 md:col-span-12 resize-none bg-transparent shadow-inner shadow-purple-500"></textarea>
-                        <input id="submit" type="submit"
-                              class="btn text-white shadow-inner shadow-purple-500 bg-transparent border-purple-500 md:col-span-12 hover:bg-purple-900">
+                        <input title="Enter valid student email" disabled id="submit" type="submit"
+                              value="Enter valid student email and Unlock Button"
+                              class="btn disabled:text-red-500 text-white shadow-inner shadow-purple-500 bg-transparent border-purple-500 md:col-span-12 hover:bg-purple-900">
                   </form>
             </div>
       </main>
+      <script src="./main.js"></script>
 </body>
 
 </html>
