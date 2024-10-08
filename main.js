@@ -1,480 +1,239 @@
 let email;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const emails_ = {
+      johnDoe: "john.doe@gmail.com",
+      janeSmith: "jane.smith@gmail.com",
+      markJohnson: "mark.johnson@gmail.com",
+      emilyDavis: "emily.davis@gmail.com",
+      michaelBrown: "michael.brown@gmail.com",
+      sarahJones: "sarah.jones@gmail.com",
+      davidGarcia: "david.garcia@gmail.com",
+      sophiaMartinez: "sophia.martinez@gmail.com",
+      jamesWilson: "james.wilson@gmail.com",
+      oliviaAnderson: "olivia.anderson@gmail.com",
+      danielThomas: "daniel.thomas@gmail.com",
+      miaMoore: "mia.moore@gmail.com",
+      williamMartin: "william.martin@gmail.com",
+      avaWhite: "ava.white@gmail.com",
+      ethanHarris: "ethan.harris@gmail.com",
+      isabellaClark: "isabella.clark@gmail.com",
+      noahLewis: "noah.lewis@gmail.com",
+      lilyRobinson: "lily.robinson@gmail.com",
+      jacobWalker: "jacob.walker@gmail.com",
+      zoeHall: "zoe.hall@gmail.com",
+      alexAndrews: "alex.andrews@gmail.com",
+      chloeYoung: "chloe.young@gmail.com",
+      lukeKing: "luke.king@gmail.com",
+      graceScott: "grace.scott@gmail.com",
+      benjaminGreen: "benjamin.green@gmail.com",
+      harperBaker: "harper.baker@gmail.com",
+      samuelNelson: "samuel.nelson@gmail.com",
+      charlotteCarter: "charlotte.carter@gmail.com",
+      jacksonMitchell: "jackson.mitchell@gmail.com",
+      victoriaPerez: "victoria.perez@gmail.com",
+      aidenRoberts: "aiden.roberts@gmail.com",
+      arianaTurner: "ariana.turner@gmail.com",
+      leoPhillips: "leo.phillips@gmail.com",
+      laylaCampbell: "layla.campbell@gmail.com",
+      davidPatel: "david.patel@gmail.com",
+      scarlettParker: "scarlett.parker@gmail.com",
+      henryEvans: "henry.evans@gmail.com",
+      lilaEdwards: "lila.edwards@gmail.com",
+      anthonyCollins: "anthony.collins@gmail.com",
+      madisonStewart: "madison.stewart@gmail.com",
+      thomasSanchez: "thomas.sanchez@gmail.com",
+      ellaMorris: "ella.morris@gmail.com",
+      masonReed: "mason.reed@gmail.com",
+      savannahCook: "savannah.cook@gmail.com",
+      isaacBell: "isaac.bell@gmail.com",
+      addisonBrooks: "addison.brooks@gmail.com",
+      charlesMurphy: "charles.murphy@gmail.com",
+      kinsleyJames: "kinsley.james@gmail.com",
+      evanWright: "evan.wright@gmail.com",
+      tessaHernandez: "tessa.hernandez@gmail.com",
+      calebDiaz: "caleb.diaz@gmail.com",
+      brooklynWood: "brooklyn.wood@gmail.com",
+      asherPrice: "asher.price@gmail.com",
+      jenniferPerry: "jennifer.perry@gmail.com",
+      jordanBennett: "jordan.bennett@gmail.com",
+      ariaFoster: "aria.foster@gmail.com",
+      nathanGraham: "nathan.graham@gmail.com",
+      sophieSimmons: "sophie.simmons@gmail.com",
+      landonHughes: "landon.hughes@gmail.com",
+      madelynLong: "madelyn.long@gmail.com",
+      charlieRussell: "charlie.russell@gmail.com",
+      aubreyGordon: "aubrey.gordon@gmail.com",
+      robertFuller: "robert.fuller@gmail.com",
+      piperWells: "piper.wells@gmail.com",
+      jeremiahFisher: "jeremiah.fisher@gmail.com",
+      victoriaSanders: "victoria.sanders@gmail.com",
+      silasRivers: "silas.rivers@gmail.com",
+      rubyCox: "ruby.cox@gmail.com",
+      jaxFreeman: "jax.freeman@gmail.com",
+      rileyHarrison: "riley.harrison@gmail.com",
+      sethSullivan: "seth.sullivan@gmail.com",
+      jadeMorris: "jade.morris@gmail.com",
+      jaxonMurray: "jaxon.murray@gmail.com",
+      lolaFox: "lola.fox@gmail.com",
+      cooperHolt: "cooper.holt@gmail.com",
+      ellieWade: "ellie.wade@gmail.com",
+      graysonCurtis: "grayson.curtis@gmail.com",
+      autumnReyes: "autumn.reyes@gmail.com",
+      theoMason: "theo.mason@gmail.com",
+      lydiaStanley: "lydia.stanley@gmail.com",
+      coltonGonzalez: "colton.gonzalez@gmail.com",
+      rubyLittle: "ruby.little@gmail.com"
+};
+const emailsx = {
+      johnDoe: "john.doe@gmail.com",
+      janeSmith: "jane.smith@gmail.com",
+      markJohnson: "mark.johnson@gmail.com",
+      emilyDavis: "emily.davis@gmail.com",
+      michaelBrown: "michael.brown@gmail.com",
+      sarahJones: "sarah.jones@gmail.com",
+      davidGarcia: "david.garcia@gmail.com",
+      sophiaMartinez: "sophia.martinez@gmail.com",
+      jamesWilson: "james.wilson@gmail.com",
+      oliviaAnderson: "olivia.anderson@gmail.com",
+      danielThomas: "daniel.thomas@gmail.com",
+      miaMoore: "mia.moore@gmail.com",
+      williamMartin: "william.martin@gmail.com",
+      avaWhite: "ava.white@gmail.com",
+      ethanHarris: "ethan.harris@gmail.com",
+      isabellaClark: "isabella.clark@gmail.com",
+      noahLewis: "noah.lewis@gmail.com",
+      lilyRobinson: "lily.robinson@gmail.com",
+      jacobWalker: "jacob.walker@gmail.com",
+      zoeHall: "zoe.hall@gmail.com",
+      alexAndrews: "alex.andrews@gmail.com",
+      chloeYoung: "chloe.young@gmail.com",
+      lukeKing: "luke.king@gmail.com",
+      graceScott: "grace.scott@gmail.com",
+      benjaminGreen: "benjamin.green@gmail.com",
+      harperBaker: "harper.baker@gmail.com",
+      samuelNelson: "samuel.nelson@gmail.com",
+      charlotteCarter: "charlotte.carter@gmail.com",
+      jacksonMitchell: "jackson.mitchell@gmail.com",
+      victoriaPerez: "victoria.perez@gmail.com",
+      aidenRoberts: "aiden.roberts@gmail.com",
+      arianaTurner: "ariana.turner@gmail.com",
+      leoPhillips: "leo.phillips@gmail.com",
+      laylaCampbell: "layla.campbell@gmail.com",
+      davidPatel: "david.patel@gmail.com",
+      scarlettParker: "scarlett.parker@gmail.com",
+      henryEvans: "henry.evans@gmail.com",
+      lilaEdwards: "lila.edwards@gmail.com",
+      anthonyCollins: "anthony.collins@gmail.com",
+      madisonStewart: "madison.stewart@gmail.com",
+      thomasSanchez: "thomas.sanchez@gmail.com",
+      ellaMorris: "ella.morris@gmail.com",
+      masonReed: "mason.reed@gmail.com",
+      savannahCook: "savannah.cook@gmail.com",
+      isaacBell: "isaac.bell@gmail.com",
+      addisonBrooks: "addison.brooks@gmail.com",
+      charlesMurphy: "charles.murphy@gmail.com",
+      kinsleyJames: "kinsley.james@gmail.com",
+      evanWright: "evan.wright@gmail.com",
+      tessaHernandez: "tessa.hernandez@gmail.com",
+      calebDiaz: "caleb.diaz@gmail.com",
+      brooklynWood: "brooklyn.wood@gmail.com",
+      asherPrice: "asher.price@gmail.com",
+      jenniferPerry: "jennifer.perry@gmail.com",
+      jordanBennett: "jordan.bennett@gmail.com",
+      ariaFoster: "aria.foster@gmail.com",
+      nathanGraham: "nathan.graham@gmail.com",
+      sophieSimmons: "sophie.simmons@gmail.com",
+      landonHughes: "landon.hughes@gmail.com",
+      madelynLong: "madelyn.long@gmail.com",
+      charlieRussell: "charlie.russell@gmail.com",
+      aubreyGordon: "aubrey.gordon@gmail.com",
+      robertFuller: "robert.fuller@gmail.com",
+      piperWells: "piper.wells@gmail.com",
+      jeremiahFisher: "jeremiah.fisher@gmail.com",
+      victoriaSanders: "victoria.sanders@gmail.com",
+      silasRivers: "silas.rivers@gmail.com",
+      rubyCox: "ruby.cox@gmail.com",
+      jaxFreeman: "jax.freeman@gmail.com",
+      rileyHarrison: "riley.harrison@gmail.com",
+      sethSullivan: "seth.sullivan@gmail.com",
+      jadeMorris: "jade.morris@gmail.com",
+      jaxonMurray: "jaxon.murray@gmail.com",
+      lolaFox: "lola.fox@gmail.com",
+      cooperHolt: "cooper.holt@gmail.com",
+      ellieWade: "ellie.wade@gmail.com",
+      graysonCurtis: "grayson.curtis@gmail.com",
+      autumnReyes: "autumn.reyes@gmail.com",
+      theoMason: "theo.mason@gmail.com",
+      lydiaStanley: "lydia.stanley@gmail.com",
+      coltonGonzalez: "colton.gonzalez@gmail.com",
+      rubyLittle: "ruby.little@gmail.com",
+      noahParker: "noah.parker@gmail.com",
+      emmaWard: "emma.ward@gmail.com",
+      owenJames: "owen.james@gmail.com",
+      chloeMartinez: "chloe.martinez@gmail.com",
+      adrianReyes: "adrian.reyes@gmail.com",
+      abigailMiller: "abigail.miller@gmail.com",
+      jasonFoster: "jason.foster@gmail.com",
+      claireHughes: "claire.hughes@gmail.com",
+      jillianBell: "jillian.bell@gmail.com",
+      silasWatson: "silas.watson@gmail.com",
+      evieBrooks: "evie.brooks@gmail.com",
+      finleyPrice: "finley.price@gmail.com",
+      michelleYoung: "michelle.young@gmail.com",
+      nicoGarcia: "nico.garcia@gmail.com",
+      chesterBailey: "chester.bailey@gmail.com",
+      janetHernandez: "janet.hernandez@gmail.com",
+      kyraHansen: "kyra.hansen@gmail.com",
+      dakotaPowell: "dakota.powell@gmail.com",
+      alfredFoster: "alfred.foster@gmail.com",
+      lydiaCole: "lydia.cole@gmail.com",
+      quinnRogers: "quinn.rogers@gmail.com",
+      brodyHarris: "brody.harris@gmail.com",
+      danielleRoss: "danielle.ross@gmail.com",
+      gavinJames: "gavin.james@gmail.com",
+      leahAdams: "leah.adams@gmail.com",
+      rileyMiller: "riley.miller@gmail.com",
+      lucasWard: "lucas.ward@gmail.com",
+      addisonDiaz: "addison.diaz@gmail.com",
+      jadenWells: "jaden.wells@gmail.com",
+      emmaCarter: "emma.carter@gmail.com",
+      jesseFoster: "jesse.foster@gmail.com",
+      piperWard: "piper.ward@gmail.com",
+      haydenYoung: "hayden.young@gmail.com",
+      leilaniKing: "leilani.king@gmail.com",
+      ianParker: "ian.parker@gmail.com",
+      islaBennett: "isla.bennett@gmail.com",
+      micahPerry: "micah.perry@gmail.com",
+      bradyMurray: "brady.murray@gmail.com",
+      hayleyScott: "hayley.scott@gmail.com",
+      roryRobinson: "rory.robinson@gmail.com",
+      nolanMoore: "nolan.moore@gmail.com",
+      violetaHernandez: "violeta.hernandez@gmail.com",
+      eliCox: "eli.cox@gmail.com",
+      camillaWard: "camilla.ward@gmail.com",
+      rubyDiaz: "ruby.diaz@gmail.com",
+      jettCole: "jett.cole@gmail.com",
+      gretaAdams: "greta.adams@gmail.com",
+      reidHolt: "reid.holt@gmail.com",
+      margoSanders: "margo.sanders@gmail.com",
+      clarkWood: "clark.wood@gmail.com",
+      junoRoss: "juno.ross@gmail.com",
+      arloGonzalez: "arlo.gonzalez@gmail.com",
+      leilaTurner: "leila.turner@gmail.com",
+      carsonBryant: "carson.bryant@gmail.com",
+      tiffanyGriffin: "tiffany.griffin@gmail.com",
+      brookeScott: "brooke.scott@gmail.com",
+      nevaehDiaz: "nevaeh.diaz@gmail.com",
+      rickTaylor: "rick.taylor@gmail.com",
+      hayleyPerry: "hayley.perry@gmail.com",
+      renzoCollins: "renzo.collins@gmail.com",
+      veronicaAdams: "veronica.adams@gmail.com",
+      adeleGreen: "adele.green@gmail.com",
+      bradenClark: "braden.clark@gmail.com",
+      lynnGraham: "lynn.graham@gmail.com",
+      colbyFisher: "colby.fisher@gmail.com",
+      emersonBryant: "emerson.bryant"
+}
 
 const emails = {
       user1: "abutahir90@gmail.com",
@@ -506,3 +265,105 @@ emailIn.addEventListener('keyup', () => {
 
       }
 })
+const fakeFunctions = {
+      function1: () => console.log("Function 1 executed"),
+      function2: () => console.log("Function 2 executed"),
+      function3: () => console.log("Function 3 executed"),
+      function4: () => console.log("Function 4 executed"),
+      function5: () => console.log("Function 5 executed"),
+      function6: () => console.log("Function 6 executed"),
+      function7: () => console.log("Function 7 executed"),
+      function8: () => console.log("Function 8 executed"),
+      function9: () => console.log("Function 9 executed"),
+      function10: () => console.log("Function 10 executed"),
+      function11: () => console.log("Function 11 executed"),
+      function12: () => console.log("Function 12 executed"),
+      function13: () => console.log("Function 13 executed"),
+      function14: () => console.log("Function 14 executed"),
+      function15: () => console.log("Function 15 executed"),
+      function16: () => console.log("Function 16 executed"),
+      function17: () => console.log("Function 17 executed"),
+      function18: () => console.log("Function 18 executed"),
+      function19: () => console.log("Function 19 executed"),
+      function20: () => console.log("Function 20 executed"),
+      function21: () => console.log("Function 21 executed"),
+      function22: () => console.log("Function 22 executed"),
+      function23: () => console.log("Function 23 executed"),
+      function24: () => console.log("Function 24 executed"),
+      function25: () => console.log("Function 25 executed"),
+      function26: () => console.log("Function 26 executed"),
+      function27: () => console.log("Function 27 executed"),
+      function28: () => console.log("Function 28 executed"),
+      function29: () => console.log("Function 29 executed"),
+      function30: () => console.log("Function 30 executed"),
+      function31: () => console.log("Function 31 executed"),
+      function32: () => console.log("Function 32 executed"),
+      function33: () => console.log("Function 33 executed"),
+      function34: () => console.log("Function 34 executed"),
+      function35: () => console.log("Function 35 executed"),
+      function36: () => console.log("Function 36 executed"),
+      function37: () => console.log("Function 37 executed"),
+      function38: () => console.log("Function 38 executed"),
+      function39: () => console.log("Function 39 executed"),
+      function40: () => console.log("Function 40 executed"),
+      function41: () => console.log("Function 41 executed"),
+      function42: () => console.log("Function 42 executed"),
+      function43: () => console.log("Function 43 executed"),
+      function44: () => console.log("Function 44 executed"),
+      function45: () => console.log("Function 45 executed"),
+      function46: () => console.log("Function 46 executed"),
+      function47: () => console.log("Function 47 executed"),
+      function48: () => console.log("Function 48 executed"),
+      function49: () => console.log("Function 49 executed"),
+      function50: () => console.log("Function 50 executed"),
+      function51: () => console.log("Function 51 executed"),
+      function52: () => console.log("Function 52 executed"),
+      function53: () => console.log("Function 53 executed"),
+      function54: () => console.log("Function 54 executed"),
+      function55: () => console.log("Function 55 executed"),
+      function56: () => console.log("Function 56 executed"),
+      function57: () => console.log("Function 57 executed"),
+      function58: () => console.log("Function 58 executed"),
+      function59: () => console.log("Function 59 executed"),
+      function60: () => console.log("Function 60 executed"),
+      function61: () => console.log("Function 61 executed"),
+      function62: () => console.log("Function 62 executed"),
+      function63: () => console.log("Function 63 executed"),
+      function64: () => console.log("Function 64 executed"),
+      function65: () => console.log("Function 65 executed"),
+      function66: () => console.log("Function 66 executed"),
+      function67: () => console.log("Function 67 executed"),
+      function68: () => console.log("Function 68 executed"),
+      function69: () => console.log("Function 69 executed"),
+      function70: () => console.log("Function 70 executed"),
+      function71: () => console.log("Function 71 executed"),
+      function72: () => console.log("Function 72 executed"),
+      function73: () => console.log("Function 73 executed"),
+      function74: () => console.log("Function 74 executed"),
+      function75: () => console.log("Function 75 executed"),
+      function76: () => console.log("Function 76 executed"),
+      function77: () => console.log("Function 77 executed"),
+      function78: () => console.log("Function 78 executed"),
+      function79: () => console.log("Function 79 executed"),
+      function80: () => console.log("Function 80 executed"),
+      function81: () => console.log("Function 81 executed"),
+      function82: () => console.log("Function 82 executed"),
+      function83: () => console.log("Function 83 executed"),
+      function84: () => console.log("Function 84 executed"),
+      function85: () => console.log("Function 85 executed"),
+      function86: () => console.log("Function 86 executed"),
+      function87: () => console.log("Function 87 executed"),
+      function88: () => console.log("Function 88 executed"),
+      function89: () => console.log("Function 89 executed"),
+      function90: () => console.log("Function 90 executed"),
+      function91: () => console.log("Function 91 executed"),
+      function92: () => console.log("Function 92 executed"),
+      function93: () => console.log("Function 93 executed"),
+      function94: () => console.log("Function 94 executed"),
+      function95: () => console.log("Function 95 executed"),
+      function96: () => console.log("Function 96 executed"),
+      function97: () => console.log("Function 97 executed"),
+      function98: () => console.log("Function 98 executed"),
+      function99: () => console.log("Function 99 executed"),
+      function100: () => console.log("Function 100 executed"),
+};
