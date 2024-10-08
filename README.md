@@ -1,4 +1,4 @@
-<h1>From collect in google from Project completed</h1>
+<h1>From collect in google sheets Project completed</h1>
 <br>
 project link : https://giveresopnce.netlify.app 
 <br>
