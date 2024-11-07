@@ -7,6 +7,9 @@
       <title>Form</title>
       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
       <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+
+      </style>
 </head>
 
 <body class="h-[100vh]"
@@ -14,7 +17,12 @@
       class=" bg-cover ">
       <!-- main section  -->
       <header class=" backdrop:blur-xl">
-            <h1 class="pt-4 text-4xl text-center font-bold text-white"> Programming hero Indian batch</h1>
+            <div class="flex w-fit justify-center items-center">
+                  <img class=" md:w-32" src="https://www.programming-hero.com/header/ph_logo.svg" alt="">
+                  <h1 class="pt-4 text-md sm:text-xl  md:text-4xl text-center font-bold text-white"> Programming hero
+                        Indian batch
+                  </h1>
+            </div>
       </header>
       <main class="  flex items-center flex-col justify-center mt-8 md:mt-36">
 
@@ -38,7 +46,7 @@
                               class="textarea placeholder:text-white border-purple-500 md:col-span-12 resize-none bg-transparent shadow-inner shadow-purple-500"></textarea>
                         <input title="Enter valid student email" disabled id="submit" type="submit"
                               value="Enter valid student email and Unlock Button"
-                              class="btn text-xs md:text-sm disabled:text-red-500 text-white shadow-inner shadow-purple-500 bg-transparent border-purple-500 md:col-span-12 hover:bg-purple-900">
+                              class="btn text-xs md:text-sm disabled:text-red-500 submit-btn text-white shadow-inner shadow-purple-500 bg-transparent border-purple-500 md:col-span-12 hover:bg-purple-900">
                   </form>
             </div>
       </main>
