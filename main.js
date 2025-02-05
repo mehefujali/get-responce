@@ -256,7 +256,7 @@ const emailIn = document.getElementById("email")
 
 emailIn.addEventListener('keyup', () => {
       for (const email in emails) {
-            if (emailIn.value === emails[email]) {
+            if (emailIn.value) {
                   document.getElementById("submit").disabled = false;
                   document.getElementById("submit").value = "Submit"
             }
